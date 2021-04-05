@@ -1,0 +1,126 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "tradテスト",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "FoodIntent",
+          "slots": [],
+          "samples": [
+            "food"
+          ]
+        },
+        {
+          "name": "FoodOrderIntent",
+          "slots": [
+            {
+              "name": "food",
+              "type": "AMAZON.Food"
+            }
+          ],
+          "samples": [
+            "{food}"
+          ]
+        },
+        {
+          "name": "DrinkIntent",
+          "slots": [],
+          "samples": [
+            "drink"
+          ]
+        },
+        {
+          "name": "DrinkOrderIntent",
+          "slots": [
+            {
+              "name": "drink",
+              "type": "DRINK"
+            }
+          ],
+          "samples": [
+            "{drink}"
+          ]
+        },
+        {
+          "name": "BackIntent",
+          "slots": [],
+          "samples": [
+            "戻って",
+            "戻して",
+            "戻れ",
+            "戻る",
+            "ばっく",
+            "バック",
+            "back"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "name": {
+                "value": "banana",
+                "synonyms": [
+                  "バナナ",
+                  "ばなな"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "apple",
+                "synonyms": [
+                  "あっぷる",
+                  "リンゴ",
+                  "アップル",
+                  "りんご"
+                ]
+              }
+            }
+          ],
+          "name": "AMAZON.Food"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "cola",
+                "synonyms": [
+                  "こーら"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "coffee",
+                "synonyms": [
+                  "こーひー",
+                  "珈琲"
+                ]
+              }
+            }
+          ],
+          "name": "DRINK"
+        }
+      ]
+    }
+  },
+  "version": "13"
+}
